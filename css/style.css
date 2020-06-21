@@ -90,7 +90,7 @@ header h1 {
 	cursor: pointer;
 	height: 22px;
 	margin-left: -4px;
-	width: 31px;
+	width: 31px;`
 }
 #auth {
 	float: right;
@@ -148,18 +148,21 @@ header h1 {
 #content {
 	margin-left: 25px;
 	color: #4593c0;
-	
 }
 #content h1 {
 	text-align: center;
 }
 .medical_mask {
-	display: block;
 	border: 1px solid #a9b4bb;
 	margin-left: 25px;
-	padding: 10px 5px;
+	padding-left: 15px;
+	padding-right : 15px;
 	width: 25%;
-	text-align: center;
+	color:	#4593c0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 footer {
 	background: #4593c0;
