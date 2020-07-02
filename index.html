@@ -1,49 +1,78 @@
-  <!DOCTYPE html>
-   <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>eShop</title>
-    </head>
-    <body>
-  <header id="container"> 
-  <img src="./images/medical-mask.jpg" alt="Logo">
-  <form action="" method="get">
-      <input name="s" placeholder="Искать здесь..." type="search">
-      <button type="submit">Поиск</button>
-  </form>
-  <ul style="list-style-type:square;">
-         <li><a href="index.html">Главная</a></li>
-         <li><a href="./Catalog/catalog.html">Каталог</a></li>            
-         <li><a href="contacts.html">Контакты</a></li>
-  </ul>
-  <button>Карзина</button>
-  </header>
-  <section id="content">     
-  <hr> 
-  <h2 style="color: blue;">Мы приветствуем вас на нашем сайте</h2>
-	<a href="./images/image-22.jpg" target="_blank"><img src="./images/image-22.jpg" alt="Фото1" width = "600" height = "278" /></a>
-  <p><em><strong style="color: blue;">МЕДИЦИНМКАЯ МАСКА</strong></em> защищает наши дыхательные пути и предотвращает попадания инфекция через слизистую. <br> Но если надеть медицинскую маску неправильно, то эффекта никакого не будет. 
-      Неправильно надетая маска бесполезна и даже наносит вред. Маска это средство индивидуальной защиты человека. <br>
-      90% людей даже не знают какой стороной правильно её носить, ну и носят как попало
-      Медицинская маска имеет две стороны, одна из которых светлая, другая - цветная. <br> Более светлый слой является воздушным фильтром, который удерживает бактерии от самого человека.
-      Как долго можно носить маску, сколько времени действует эффект фильтров. <br> Одноразовые медицинские маски, приобретенные в аптеке, годны до двух часов. 
-      То есть, когда человек болеет ему стоит носить маску светлой стороной к себе (цветной стороной наружу). <br> При этом цветная сторона, обычно синяя, зелёная или розовая, является антибактериальным слоем, то есть если человек здоров и не хочет заразиться, то стоит надевать маску светлой стороной наружу.</p>
-  </section>
-  <div class="form-signup">
-      <h1>Регистрация</h1>
-          <fieldset>
-              <p class="login-msg"></p>
-                <form>
-                    <input type="email" placeholder="Введите Ваш email адрес..." required />
-                    <input type="password" placeholder="Ваш сложный пароль..." required />
-                    <input type="text" placeholder="Имя пользователя" required />
-                    <input type="submit" value="Зарегистрироваться" />
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="./css/style.css">      
+  </head>
+  <body>
+    <div id="container">
+        <header>
+            <h1>MedShop.ru</h1>
+            <nav>
+                <ul id="topmenu">
+                    <li><a href="index.html" target="_blank">Главная</a></li>
+                    <li><a href="#" target="_blank">О нас</a></li>
+                    <li><a href="./Catalog/catalog.html" target="_blank">Каталог</a></li>
+                    <li><a href="#" target="_blank">Заказы</a></li>
+                    <li><a href="#" target="_blank">Карзина</a></li>
+                    <li><a href="contacts.html" target="_blank">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="top">
+            <div class="clear"></div>
+                <div id="search">
+                    <form name="search" action="#" method="get">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" name="query" placeholder="Поиск" />
+                                </td>
+                                <td>
+                                    <input type="submit" name="search" value="" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            <div id="auth">
+                <form name="auth" action="index.html" method="post">
+                    <div>
+                        <input type="text" name="login" placeholder="Логин"/>
+                        <input type="password" name="password" placeholder="Пароль"/>
+                        <input type="submit" name="auth" value="Войти"/>
+                    </div>
                 </form>
-                <a href="#" class="flipper">Уже зарегистрированы? Войти.</a>
-          </fieldset>
-        </div><br>
-       <hr>
-      <p class=""><a href="https://geekbrains.ru/study_groups/12101/homeworks/70211">Geekbrains. HTML/CSS. Интерактивный курс.</a>&nbsp;&copy;2020 &nbsp;<span>Все права защищены</span></p>   
-     </body>
-    </html>
+                <img src="images/bg_item_top.png" alt="" id="top_sep"/>
+                <img src="images/icon_register.png" alt="" id="icon_register"/>
+                <a href="#" id="link_register">Регистрация</a>
+                <img src="images/bg_item_top.png" alt=""/>
+                <div id="links_reset">
+                    <a href="index.html">Забыли пароль?</a>
+                    <a href="index.html">Забыли логин?</a>
+                </div>
+            </div>
+		</div>
+	 </div>
+  
+    <section id="content"> 
+    <img src="./images/yituoyikouzhaojixiangqingbannerPCduaneyu.jpg" width = "1500" alt="Собственное производство">    
+    <h2>Мы приветствуем вас на нашем сайте</h2>
+	  <a href="./images/image-22.jpg" target="_blank"><img src="./images/image-22.jpg" alt="Фото1" width = "1500" /></a>
+    <p><em><strong>МЕДИЦИНМКАЯ МАСКА</strong></em> защищает наши дыхательные пути и предотвращает попадания инфекция через слизистую. <br> Но если надеть медицинскую маску неправильно, то эффекта никакого не будет. 
+       Неправильно надетая маска бесполезна и даже наносит вред. Маска это средство индивидуальной защиты человека. <br>
+       90% людей даже не знают какой стороной правильно её носить, ну и носят как попало
+       Медицинская маска имеет две стороны, одна из которых светлая, другая - цветная. <br> Более светлый слой является воздушным фильтром, который удерживает бактерии от самого человека.
+       Как долго можно носить маску, сколько времени действует эффект фильтров. <br> Одноразовые медицинские маски, приобретенные в аптеке, годны до двух часов. 
+       То есть, когда человек болеет ему стоит носить маску светлой стороной к себе (цветной стороной наружу). <br> При этом цветная сторона, обычно синяя, зелёная или розовая, является антибактериальным слоем, то есть если человек здоров и не хочет заразиться, то стоит надевать маску светлой стороной наружу.</p>
+    <br>
+   	</section>
+	<footer >
+        <p class=""><a href="https://geekbrains.ru/study_groups/12101/homeworks/70211">GeekBrains. HTML/CSS. Интерактивный курс.</a>&nbsp;&copy;2020 &nbsp;<span>Все права защищены</span></p>   
+    </footer>
+	  </body>
+     </html>

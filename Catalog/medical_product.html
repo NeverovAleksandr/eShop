@@ -2,32 +2,67 @@
   <html lang="en">
   <head>
      <meta charset="UTF-8">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>eShop</title>
-  </head>
-  <body>
-    <header id="container"> 
-      <img src="../images/medical-mask.jpg" alt="Logo">
-	  <form action="" method="get">
-          <input name="s" placeholder="Искать здесь..." type="search">
-          <button type="submit">Поиск</button>
-      </form>
-      <ul>
-         <li><a href="../index.html">Главная</a></li>
-         <li><a href="catalog.html">Каталог</a></li>
-		    <ul>
-              <li><a href="product.html">Продукт1</a></li>
-              <li><a href="medical_product.html">Продукт2</a></li>
-              <li><a href="product_preparation.html">Продукт3</a></li>               
-            </ul>
-         <li><a href="../contacts.html">Контакты</a></li>
-      </ul>
-      <button>Карзина</button>
-    </header>
-  <hr>
-  <h2> Медицинская маска трехслойная с резинками</h2>
-   <h3>Описание товара</h3>
-   <a href="../images/belaya-3-sloya.jpg" target="_blank"><img src="../images/belaya-3-sloya.jpg" alt="Фото1" width = "415" height = "278" /></a>
+     <link rel="stylesheet" href="../css/style.css"> 
+   </head>
+   <body>
+   <div id="container">
+        <header>
+            <h1>MedShop.ru</h1>
+            <nav>
+                <ul id="topmenu">
+                    <li><a href="../index.html" target="_blank">Главная</a></li>
+                    <li><a href="#" target="_blank">О нас</a></li>
+                    <li><a href="catalog.html" target="_blank">Каталог</a></li>
+                    <li><a href="#" target="_blank">Заказы</a></li>
+                    <li><a href="#" target="_blank">Карзина</a></li>
+                    <li><a href="../contacts.html" target="_blank">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="top">
+            <div class="clear"></div>
+                <div id="search">
+                    <form name="search" action="#" method="get">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" name="query" placeholder="Поиск" />
+                                </td>
+                                <td>
+                                    <input type="submit" name="search" value="" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            <div id="auth">
+                <form name="auth" action="index.html" method="post">
+                    <div>
+                        <input type="text" name="login" placeholder="Логин"/>
+                        <input type="password" name="password" placeholder="Пароль"/>
+                        <input type="submit" name="auth" value="Войти"/>
+                    </div>
+                </form>
+                <img src="../images/bg_item_top.png" alt="" id="top_sep"/>
+                <img src="../images/icon_register.png" alt="" id="icon_register"/>
+                <a href="../index.html" id="link_register">Регистрация</a>
+                <img src="../images/bg_item_top.png" alt=""/>
+                <div id="links_reset">
+                    <a href="../index.html">Забыли пароль?</a>
+                    <a href="../index.html">Забыли логин?</a>
+                </div>
+            </div>
+		</div>
+	 </div>
+   <section id="content_product">
+   <h2>Товар каталога</h2>
+   <article class="product_list"> 
+   <a href="../images/belaya-3-sloya.jpg" target="_blank"><img src="../images/belaya-3-sloya.jpg" alt="Фото1" width = "435" /></a>
+   <h2> Медицинская маска трехслойная с резинками</h2>
    <h3>Характеристика товара</h3>
    <ul>
       <li>50 шт/пакет</li>
@@ -35,35 +70,44 @@
       <li>Размер маски: 17.5 см × 9.5 см</li>
       <li>Материал: СМС (спанбонд, мельтблаун, спанобоунд)</li>
       <li>Плотность: 25 гр.</li>
-    </ul>
+    </ul><br>
+	</article>
+	<article class="content_product">
       <h3>Краткое описание</h3>
-      <p>Трехслойная одноразовая маска на резинках. Маска плотно прилегают к лицу, благодаря резинкам.</p> 
-    <h3>Подробное описание товара</h3>  
-    <p>Трехслойный материал S-спанбонд, M-мельтблаун, S-спанбонд эффективно защищает от попадания мелкодисперсной пыли, влаги и бактерий. <br> Размер и плотность маски обеспечивает комфортное ношение в течении длительного времени. Использование медицинской маски во время <br> эпидемии инфекций, передаваемых воздушно-капельным путем, а также при контакте с больным снижает риск заражения. Цвет маски: белый/голубой.</p>
-    <p>Размер: 175х95 мм (соответствует ГОСТ).</p>
-    <p><strong>Маски медицинские российского производства с полным пакетом документов (регистрационное удостоверение, декларация о соответствии). НДС 10%</strong></p>
-    <p><strong>Цена указана за одну маску.</strong></p>
-    <p><strong>Продается упаковками по 50 масок.</strong></p>
-    <h2>18 руб.</h2>
-    <p><button>Оформить заказ</button></p>
-    <p><strong>Оптовые цены:</strong></p>
-    <p>От 100 шт. - 18 руб./шт.</p>
-    <p>От 500 шт. - 16 руб./шт.</p>
-    <p>От 1 000 шт. - 14 руб./шт.</p>
-    <p>От 5 000 шт. - 13 руб./шт.</p>
-    <p>От 10 000 шт. - 11 руб./шт.</p>
-    <p>От 50 000 шт. - 10 руб./шт.</p>
-    <p><strong>Крупные оптовые закупки рассматриваются в индивидуальном порядке и всегда по самым интересным ценам.</strong></p>
-    <form>
-      <fieldset>
-       <legend>Контактная информация</legend>
-       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="userName">Имя</label>&nbsp;&nbsp;&nbsp;<input type="text" name="userName" placeholder="Введите имя" size="18" /></p>
-       <p>&nbsp;&nbsp;&nbsp;<label for="email">E-mail</label>&nbsp;&nbsp;&nbsp;<input type="email" placeholder="user@gmail.com" id="email" name="email"/></p>
-       <p><label for="phone">Телефон: </label><input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone"/></p>
-      </fieldset>
-      <p><input type="submit" value="Заявка на опт."></p>
-    </form>  
-  <hr>
-  <p class=""><a href="https://geekbrains.ru/study_groups/12101/homeworks/70211">Geekbrains.HTML/CSS. Интерактивный курс </a>&nbsp;&copy;2020 &nbsp;<span>Все права защщены</span></p>   
-  </body>
+        <p class="Brief_product">Трехслойная одноразовая маска на резинках. Маска плотно прилегают к лицу, благодаря резинкам.</p> 
+      <h2>Подробное описание товара</h2>  
+        <p class="Brief_product_list">Трехслойный материал S-спанбонд, M-мельтблаун, S-спанбонд эффективно защищает от попадания мелкодисперсной пыли, влаги и бактерий. <br> Размер и плотность маски обеспечивает комфортное ношение в течении длительного времени. Использование медицинской маски во время <br> эпидемии инфекций, передаваемых воздушно-капельным путем, а также при контакте с больным снижает риск заражения. Цвет маски: белый/голубой.</p>
+        <p class="Brief_product_list">Размер: 175х95 мм (соответствует ГОСТ).</p>
+        <p class="Brief_product_list">Маски медицинские российского производства с полным пакетом документов (регистрационное удостоверение, декларация о соответствии). НДС 10%</strong></p>
+        <p class="Brief_product_list">Цена указана за одну маску.</p>
+        <p class="Brief_product_list" >Продается упаковками по 50 масок.</p>
+        <p class="Brief_product_list">25 руб.</p>
+        <p><button>Оформить заказ</button> Кол.<button>0</button></p>
+	</article>
+      <p><strong>Оптовые цены:</strong></p>
+	<article class="column">
+       <p>От 100 шт. - 18 руб./шт.</p>
+       <p>От 500 шт. - 16 руб./шт.</p>
+       <p>От 1 000 шт. - 14 руб./шт.</p>
+       <p>От 5 000 шт. - 13 руб./шт.</p>
+       <p>От 10 000 шт. - 11 руб./шт.</p>
+       <p>От 50 000 шт. - 10 руб./шт.</p>
+    </article>
+    <h3>Крупные оптовые закупки рассматриваются в индивидуальном порядке и всегда по самым интересным ценам.</h3>
+	<article class="contact"> 
+       <form>
+          <fieldset>
+             <legend>Контактная информация</legend>
+             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="userName">Имя</label>&nbsp;&nbsp;&nbsp;<input type="text" name="userName" placeholder="Введите имя" size="18" /></p>
+             <p>&nbsp;&nbsp;&nbsp;<label for="email">E-mail</label>&nbsp;&nbsp;&nbsp;<input type="email" placeholder="user@gmail.com" id="email" name="email"/></p>
+             <p><label for="phone">Телефон: </label><input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone"/></p>
+         </fieldset>
+           <p><input type="submit" value="Заявка на опт."></p>
+       </form>  
+    </article>
+    </section>
+    <footer >
+        <p class=""><a href="https://geekbrains.ru/study_groups/12101/homeworks/70211">GeekBrains. HTML/CSS. Интерактивный курс.</a>&nbsp;&copy;2020 &nbsp;<span>Все права защищены</span></p>   
+    </footer>
+   </body>
   </html>
